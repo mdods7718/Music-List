@@ -1,0 +1,38 @@
+﻿@model Music_List.Models.Song
+
+<form method="post" asp-action="DeletePost">
+    <input asp-for="Id" hidden />  <!--this input will be for specific id passed from controller-->
+    <div class="border p-3">
+        <div class="form-group row">
+            <h2 class="text-black-50 pl-3">Delete Song</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Title"></label>
+                    </div>
+                    <div class="col-4">
+                        <label asp-for="Author"></label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <input asp-for="Title" disabled class="form-control" />
+                    </div>
+                    <div class="col-4">
+                        <input asp-for="Author" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8 row">
+                        <div class="col">
+                            <input type="submit" class="btn btn-danger w-50" value="Delete" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
