@@ -7,8 +7,10 @@
             </div>
             <div class="col-sm">
             </div>
-            <div class="col-sm">
-                <a asp-controller="Song" asp-action="Create" class="btn btn-primary">Create new Song</a>
+            <div class="col-sm text-center">
+                    <div class="btn mx-2">
+                        <a asp-controller="Song" asp-action="Create" class="btn btn-dark">Create new Song</a>
+                    </div>
             </div>
         </div>
 
@@ -41,7 +43,7 @@
                         <td width="30%">
                             <div class="w-100 btn-group"role="group">
                                                    <!--will have to add asp-route-Id below so it knows what it is deleting-->
-                                <a asp-controller="Song" asp-action="Update" asp-route-Id="@song.Id" class="btn btn-primary mx-1">Update</a>
+                                <a asp-controller="Song" asp-action="Update" asp-route-Id="@song.Id" class="btn btn-dark mx-1">Update</a>
                                 <a asp-controller="Song" asp-action="Delete" asp-route-Id="@song.Id" class="btn btn-danger mx-1">Delete</a>
                             </div>
                         </td>
